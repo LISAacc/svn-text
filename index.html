@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>東京観光ガイド</title>
-  <link rel="stylesheet" href="style.css">
+  
 </head>
 <body>
   <header>
@@ -16,76 +16,6 @@
       </ul>
     </nav>
   </header>
-
-  <main>
-    <section class="hero">
-      <img src="tokyou02.jpg" alt="東京の風景">
-      <div class="hero-text">東京を再発見しよう！</div>
-    </section>
-
-    <section class="recommend">
-      <h3>おすすめスポット</h3>
-      <div class="card-list">
-        <div class="card">
-          <img src="leimen.webp" alt="浅草">
-          <p><a href="asakusa.html">浅草</a></p>
-        </div>
-        <div class="card">
-          <img src="shibuya-crossing-tokyo-003.jpg" alt="渋谷">
-          <p><a href="shibuya.html">渋谷</a></p>
-        </div>
-        <div class="card">
-            <img src="ueno.webp" alt="上野">
-            <p><a href="area/ueno.html">上野</a></p>
-        </div>
-        <div class="card">
-            <img src="koukyou.jpg"alt="皇居">
-            <p><a href="area/koukyo.html">皇居</a></p>
-        </div>
-        
-        <!-- 必要に応じてカード追加 -->
-      </div>
-
-    </section>
-    <script>
-  function changeLang(lang) {
-    const allLangElements = document.querySelectorAll('.lang');
-    allLangElements.forEach(el => {
-      el.style.display = 'none'; // 全部非表示
-    });
-
-    const selectedLangElements = document.querySelectorAll('.' + lang);
-    selectedLangElements.forEach(el => {
-      el.style.display = 'block'; // 選んだ言語を表示
-    });
-  }
-
-  // 初期表示は日本語
-  window.onload = function() {
-    changeLang('ja');
-  };
-</script>
-
-  </main>
-  <!-- 言語切り替えボタン -->
-<div id="lang-switch">
-  <button onclick="changeLang('ja')">日本語</button>
-  <button onclick="changeLang('en')">English</button>
-  <button onclick="changeLang('zh')">中文</button>
-</div>
-
-<!-- コンテンツ部分 -->
-<h2 class="lang ja">東京へようこそ！</h2>
-<h2 class="lang en">Welcome to Tokyo!</h2>
-<h2 class="lang zh">欢迎来到东京！</h2>
-
-<p class="lang ja">このサイトでは、東京の観光スポットを紹介します。</p>
-<p class="lang en">This website introduces sightseeing spots in Tokyo.</p>
-<p class="lang zh">本网站介绍东京的旅游景点。</p>
-
-
-  <footer>
-    <p>&copy; 2025 東京観光ガイド</p>
-  </footer>
+       
 </body>
 </html>
